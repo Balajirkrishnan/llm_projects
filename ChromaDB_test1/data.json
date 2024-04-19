@@ -1,0 +1,4192 @@
+{
+    "generated_on": "2024-03-22T12:33:45.120505",
+    "version": "1.0.2",
+    "general_pod_details": {
+        "pod_number": "c90",
+        "datacenter": "raleigh",
+        "oel_unreachable_host_date": "2024/03/22/11:59",
+        "total_nodes": 128,
+        "ansible_unreachable_nodes": 5,
+        "reachable_nodes": 121,
+        "nodes_with_login_issues": 2,
+        "os_details": {
+            "Oracle Linux Server release 9.2": 3,
+            "CentOS Linux release 7.6.1810 (Core)": 8,
+            "Oracle Linux Server release 7.9": 91,
+            "CentOS release 6.10 (Final)": 3,
+            "CentOS Linux release 7.9.2009 (Core)": 15,
+            "Oracle Linux Server release 8.8": 1
+        },
+        "node_exporter_status": {
+            "installed_active": 65,
+            "installed_inactive": 0,
+            "not_installed": 56
+        },
+        "nodes_not_on_prom": 0,
+        "google_service_status": {
+            "unknown_app": 44,
+            "Running": 73,
+            "Down": 4
+        },
+        "consul_service_status": {
+            "not_installed": 37,
+            "running": 83,
+            "down": 1
+        },
+        "kafka_status": {
+            "misconfigured_topic_count": 0,
+            "misconfigured_topics": [],
+            "smoke_test_passed": 2,
+            "smoke_test_failed": 0,
+            "under_replicated_partitions": 0
+        },
+        "ntp_status": {
+            "undefined": 9,
+            "in-sync": 95,
+            "out-of-sync": 17
+        },
+        "system_types": {
+            "CloudStack KVM Hypervisor": 71,
+            "VMware Virtual Platform": 50
+        },
+        "splunk_status": {
+            "installed_active": 78,
+            "installed_inactive": 20,
+            "not_installed": 23
+        }
+    },
+    "ansible_unreachable": [
+        "itamdb01.c90.eng.raleigh.google.com",
+        "itamdb02.c90.eng.raleigh.google.com",
+        "masifmigration02.c90.eng.raleigh.google.com",
+        "svc03.c90.eng.raleigh.google.com",
+        "vault03.c90.eng.raleigh.google.com"
+    ],
+    "ansible_login_issues": [
+        "camspm01.c90.eng.raleigh.google.com",
+        "log01.c90.eng.raleigh.google.com"
+    ],
+    "node_data": {
+        "ac01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 9.2",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "not_installed",
+            "ntp_status": "undefined",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "133",
+            "logsize": "0B",
+            "app_version": [
+                "tigervnc-server-1.12.0-13.el9_2.x86_64"
+            ],
+            "splunk_status": {
+                "installed": false,
+                "status": "N/A",
+                "version": "N/A"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2023-07-10T20"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:03 UTC; 1 week 1 day ago"
+            }
+        },
+        "camsrepo01.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS Linux release 7.6.1810 (Core)",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "144",
+            "logsize": "0B",
+            "app_version": [
+                "cams_registry-2.3.0-6.noarch"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "UNKNOWN",
+                "Date": "UNKNOWN"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:03 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "cassdb01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "168",
+            "logsize": "3.0MiB",
+            "app_version": [
+                "3.11.10"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2023-10-06T07"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 19min ago"
+            }
+        },
+        "cassdb02.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "168",
+            "logsize": "3.5MiB",
+            "app_version": [
+                "3.11.10"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2023-10-06T06"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 19min ago"
+            }
+        },
+        "cassdb03.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "168",
+            "logsize": "2.5MiB",
+            "app_version": [
+                "3.11.10"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2023-10-06T06"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:01 UTC; 19min ago"
+            }
+        },
+        "cassdb04.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "168",
+            "logsize": "2.8MiB",
+            "app_version": [
+                "3.11.10"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2023-10-06T06"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 19min ago"
+            }
+        },
+        "cassdb05.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "168",
+            "logsize": "2.9MiB",
+            "app_version": [
+                "3.11.10"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2023-10-06T06"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 19min ago"
+            }
+        },
+        "comp01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Down",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "36",
+            "logsize": "113MiB",
+            "app_version": [
+                "'10.25.1.0-4'"
+            ],
+            "splunk_status": {
+                "installed": false,
+                "status": "N/A",
+                "version": "N/A"
+            },
+            "wait_time": "6",
+            "cert_package": {
+                "ops": "package not found",
+                "qtfa": "package not found"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "UNKNOWN",
+                "Date": "UNKNOWN"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-15 17:30:13 UTC; 6 days ago"
+            }
+        },
+        "ctrl01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "21",
+            "logsize": "0B",
+            "app_version": [
+                "aqui-controller-jenkins:1.0.0-13"
+            ],
+            "splunk_status": {
+                "installed": false,
+                "status": "N/A",
+                "version": "N/A"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0.3",
+                "Date": "2020-09-11T19"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Tue 2024-03-19 01:31:54 UTC; 3 days ago"
+            }
+        },
+        "ds01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "87",
+            "logsize": "0B",
+            "app_version": [
+                "389-ds-base-libs-1.3.11.1-4.el7_9.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:05 UTC; 19min ago"
+            }
+        },
+        "ds02.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "down",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "392",
+            "logsize": "0B",
+            "app_version": [
+                "389-ds-base-1.3.10.2-17.el7_9.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2023-02-24T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:01 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "dst01.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS Linux release 7.6.1810 (Core)",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "not_installed",
+            "ntp_status": "out-of-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "487",
+            "logsize": "7.8MiB",
+            "app_version": [
+                "DIST-2.2.15-1.noarch"
+            ],
+            "splunk_status": {
+                "installed": false,
+                "status": "N/A",
+                "version": "N/A"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "UNKNOWN",
+                "Date": "UNKNOWN"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:03 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "dst04.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "227",
+            "logsize": "3.1MiB",
+            "app_version": [
+                "DIST-2.3.3-1.noarch"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2023-08-08T13"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:02 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "dwn01.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS release 6.10 (Final)",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "4",
+            "logsize": "N/A",
+            "app_version": [
+                "httpd-2.4.23-2.el6.x86_64"
+            ],
+            "splunk_status": {
+                "installed": false,
+                "status": "N/A",
+                "version": "N/A"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "UNKNOWN",
+                "Date": "UNKNOWN"
+            },
+            "sssd_info": {
+                "status": "inactive",
+                "uptime": "N/A"
+            }
+        },
+        "dwn02.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS release 6.10 (Final)",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "4",
+            "logsize": "N/A",
+            "app_version": [
+                "httpd-2.4.23-2.el6.x86_64"
+            ],
+            "splunk_status": {
+                "installed": false,
+                "status": "N/A",
+                "version": "N/A"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "UNKNOWN",
+                "Date": "UNKNOWN"
+            },
+            "sssd_info": {
+                "status": "inactive",
+                "uptime": "N/A"
+            }
+        },
+        "ioc02.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS Linux release 7.9.2009 (Core)",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "208",
+            "logsize": "0B",
+            "app_version": "unknown",
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "UNKNOWN",
+                "Date": "UNKNOWN"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Tue 2024-03-19 00:04:59 UTC; 3 days ago"
+            }
+        },
+        "itamcatalog01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "143",
+            "logsize": "0B",
+            "app_version": "unknown",
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2023-07-14T17"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:03 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "itamcatalog02.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 8.8",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "not_installed",
+            "ntp_status": "undefined",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "14",
+            "logsize": "0B",
+            "app_version": "unknown",
+            "splunk_status": {
+                "installed": false,
+                "status": "N/A",
+                "version": "N/A"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-6.noarch",
+                "qtfa": "package not found"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-07T21"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 19min ago"
+            }
+        },
+        "jdc-kafka01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "190",
+            "logsize": "0B",
+            "app_version": [
+                "JDC-2.9.0.0-1.i386"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:03 UTC; 19min ago"
+            }
+        },
+        "kubemaster01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "189",
+            "logsize": "0B",
+            "app_version": [
+                "google_KUBERNETES_VERSION=\"11.0.1\"",
+                "UPSTREAM_KUBERNETES_VERSION=\"v1.26.11\"",
+                "UPSTREAM_ETCD_VERSION=\"v3.5.6\"",
+                "UPSTREAM_HELM_VERSION=\"v3.12.0\"",
+                "CLUSTERNAME=\"kubernetes\""
+            ],
+            "splunk_status": {
+                "installed": false,
+                "status": "N/A",
+                "version": "N/A"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:01 UTC; 19min ago"
+            }
+        },
+        "kubemaster02.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "254",
+            "logsize": "0B",
+            "app_version": [
+                "google_KUBERNETES_VERSION=\"11.0.1\"",
+                "UPSTREAM_KUBERNETES_VERSION=\"v1.26.11\"",
+                "UPSTREAM_ETCD_VERSION=\"v3.5.6\"",
+                "UPSTREAM_HELM_VERSION=\"v3.12.0\"",
+                "CLUSTERNAME=\"kubernetes\""
+            ],
+            "splunk_status": {
+                "installed": false,
+                "status": "N/A",
+                "version": "N/A"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 19min ago"
+            }
+        },
+        "kubemaster03.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "282",
+            "logsize": "0B",
+            "app_version": [
+                "google_KUBERNETES_VERSION=\"11.0.1\"",
+                "UPSTREAM_KUBERNETES_VERSION=\"v1.26.11\"",
+                "UPSTREAM_ETCD_VERSION=\"v3.5.6\"",
+                "UPSTREAM_HELM_VERSION=\"v3.12.0\"",
+                "CLUSTERNAME=\"kubernetes\""
+            ],
+            "splunk_status": {
+                "installed": false,
+                "status": "N/A",
+                "version": "N/A"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 19min ago"
+            }
+        },
+        "kubenode01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "144",
+            "logsize": "1.4MiB",
+            "app_version": [
+                "google_KUBERNETES_VERSION=\"11.0.1\"",
+                "UPSTREAM_KUBERNETES_VERSION=\"v1.26.11\"",
+                "CLUSTERNAME=\"kubernetes\""
+            ],
+            "splunk_status": {
+                "installed": false,
+                "status": "N/A",
+                "version": "N/A"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 19min ago"
+            }
+        },
+        "kubenode02.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "45",
+            "logsize": "25MiB",
+            "app_version": [
+                "google_KUBERNETES_VERSION=\"11.0.1\"",
+                "UPSTREAM_KUBERNETES_VERSION=\"v1.26.11\"",
+                "CLUSTERNAME=\"kubernetes\""
+            ],
+            "splunk_status": {
+                "installed": false,
+                "status": "N/A",
+                "version": "N/A"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 19min ago"
+            }
+        },
+        "kubenode03.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "184",
+            "logsize": "0B",
+            "app_version": [
+                "google_KUBERNETES_VERSION=\"11.0.1\"",
+                "UPSTREAM_KUBERNETES_VERSION=\"v1.26.11\"",
+                "CLUSTERNAME=\"kubernetes\""
+            ],
+            "splunk_status": {
+                "installed": false,
+                "status": "N/A",
+                "version": "N/A"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 19min ago"
+            }
+        },
+        "kubenode04.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "80",
+            "logsize": "2.6MiB",
+            "app_version": [
+                "google_KUBERNETES_VERSION=\"11.0.1\"",
+                "UPSTREAM_KUBERNETES_VERSION=\"v1.26.11\"",
+                "CLUSTERNAME=\"kubernetes\""
+            ],
+            "splunk_status": {
+                "installed": false,
+                "status": "N/A",
+                "version": "N/A"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 19min ago"
+            }
+        },
+        "kubenode05.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "80",
+            "logsize": "33MiB",
+            "app_version": [
+                "google_KUBERNETES_VERSION=\"11.0.1\"",
+                "UPSTREAM_KUBERNETES_VERSION=\"v1.26.11\"",
+                "CLUSTERNAME=\"kubernetes\""
+            ],
+            "splunk_status": {
+                "installed": false,
+                "status": "N/A",
+                "version": "N/A"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:01 UTC; 19min ago"
+            }
+        },
+        "kubenode12.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "running",
+            "ntp_status": "out-of-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "155",
+            "logsize": "11MiB",
+            "app_version": [
+                "google_KUBERNETES_VERSION=\"11.0.1\"",
+                "UPSTREAM_KUBERNETES_VERSION=\"v1.26.11\"",
+                "CLUSTERNAME=\"kubernetes\""
+            ],
+            "splunk_status": {
+                "installed": false,
+                "status": "N/A",
+                "version": "N/A"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 19min ago"
+            }
+        },
+        "log02.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS Linux release 7.9.2009 (Core)",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "147",
+            "logsize": "0B",
+            "app_version": [
+                "splunk-8.0.1-6db836e2fb9e.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-12.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "UNKNOWN",
+                "Date": "UNKNOWN"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Tue 2024-03-19 00:58:44 UTC; 3 days ago"
+            }
+        },
+        "masifdat01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "496",
+            "logsize": "166MiB",
+            "app_version": [
+                "14.2.8"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:01 UTC; 19min ago"
+            }
+        },
+        "masifdat02.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "108",
+            "logsize": "168MiB",
+            "app_version": [
+                "14.2.8"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:01 UTC; 19min ago"
+            }
+        },
+        "masifdat03.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "84",
+            "logsize": "163MiB",
+            "app_version": [
+                "14.2.8"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 19min ago"
+            }
+        },
+        "masifgw01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "154",
+            "logsize": "187MiB",
+            "app_version": [
+                "14.2.8"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:01 UTC; 19min ago"
+            }
+        },
+        "masifgw02.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "497",
+            "logsize": "129MiB",
+            "app_version": [
+                "14.2.8"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:01 UTC; 19min ago"
+            }
+        },
+        "masifmap01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "49",
+            "logsize": "58MiB",
+            "app_version": [
+                "14.2.8"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 19min ago"
+            }
+        },
+        "masifmap02.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "49",
+            "logsize": "7.0MiB",
+            "app_version": [
+                "14.2.8"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:01 UTC; 19min ago"
+            }
+        },
+        "masifmap03.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "49",
+            "logsize": "1.2MiB",
+            "app_version": [
+                "14.2.8"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:01 UTC; 19min ago"
+            }
+        },
+        "masifmigration01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Down",
+            "consul_service_status": "not_installed",
+            "ntp_status": "out-of-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "182",
+            "logsize": "0B",
+            "app_version": [],
+            "splunk_status": {
+                "installed": false,
+                "status": "N/A",
+                "version": "N/A"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "UNKNOWN",
+                "Date": "UNKNOWN"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:15:03 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "nfs01.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS Linux release 7.9.2009 (Core)",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "running",
+            "ntp_status": "out-of-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "198",
+            "logsize": "0B",
+            "app_version": [
+                "nfs-utils-1.3.0-0.68.el7.2.x86_64",
+                "libnfs-utils-1.11.0-1.el7.x86_64"
+            ],
+            "splunk_status": {
+                "installed": false,
+                "status": "N/A",
+                "version": "N/A"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "UNKNOWN",
+                "Date": "UNKNOWN"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:01 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "nexus01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "491",
+            "logsize": "0B",
+            "app_version": [
+                "nexus-5.0.0-9.noarch"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 19min ago"
+            }
+        },
+        "papi01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "231",
+            "logsize": "5.1KiB",
+            "app_version": [
+                "PORTAL-API-3.17.0.0-1.i386"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "inactive",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2023-08-04T10"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:03 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "papi02.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "44",
+            "logsize": "4.8KiB",
+            "app_version": [
+                "PORTAL-API-3.17.0.0-1.i386"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "inactive",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 19min ago"
+            }
+        },
+        "pbo01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "94",
+            "logsize": "6.0MiB",
+            "app_version": [
+                "PORTAL-BACKOFFICE-3.17.0.0-1.i386"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "inactive",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2023-08-04T10"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:04 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "pbo02.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "44",
+            "logsize": "7.9KiB",
+            "app_version": [
+                "PORTAL-BACKOFFICE-3.17.0.0-1.i386"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "inactive",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 19min ago"
+            }
+        },
+        "pfo01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "94",
+            "logsize": "2.4MiB",
+            "app_version": [
+                "PORTAL-FRONT-3.17.0.0-1.i386"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "inactive",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2023-08-04T10"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:01 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "pfo02.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "44",
+            "logsize": "220KiB",
+            "app_version": [
+                "PORTAL-FRONT-3.17.0.0-1.i386"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "inactive",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 19min ago"
+            }
+        },
+        "pip01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "231",
+            "logsize": "3.8KiB",
+            "app_version": [
+                "PORTAL-FRONT-3.17.0.0-1.i386"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "inactive",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2023-08-04T10"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:03 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "ppb01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "231",
+            "logsize": "7.7MiB",
+            "app_version": [
+                "PORTAL-BACKOFFICE-3.17.0.0-1.i386"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "inactive",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2023-08-04T10"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:01 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "ppb02.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "44",
+            "logsize": "7.7MiB",
+            "app_version": [
+                "PORTAL-BACKOFFICE-3.17.0.0-1.i386"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "inactive",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:01 UTC; 19min ago"
+            }
+        },
+        "pps01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "169",
+            "logsize": "58MiB",
+            "app_version": [
+                "PORTAL-FRONT-3.17.0.0-1.i386"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "inactive",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2023-08-04T10"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 19min ago"
+            }
+        },
+        "pps02.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "44",
+            "logsize": "92MiB",
+            "app_version": [
+                "PORTAL-FRONT-3.17.0.0-1.i386"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "inactive",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:01 UTC; 20min ago"
+            }
+        },
+        "prep01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "231",
+            "logsize": "5.1KiB",
+            "app_version": [
+                "tomcat-grcweb-9.0.59-1.noarch"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "inactive",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2023-08-04T10"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:02 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "prom01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "47",
+            "logsize": "0B",
+            "app_version": [
+                "vigil-prometheus-1.1.2-11.el7.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:01 UTC; 20min ago"
+            }
+        },
+        "prom02.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "47",
+            "logsize": "0B",
+            "app_version": [],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0.3",
+                "Date": "2021-04-08T21"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:02 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "prom03.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS Linux release 7.9.2009 (Core)",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "54",
+            "logsize": "0B",
+            "app_version": [],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0.3",
+                "Date": "2021-04-08T22"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:02 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "promam01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "134",
+            "logsize": "0B",
+            "app_version": [
+                "vigil-alertmanager-1.1.2-11.el7.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 19min ago"
+            }
+        },
+        "promam02.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS Linux release 7.9.2009 (Core)",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "139",
+            "logsize": "0B",
+            "app_version": [],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2023-07-11T08"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:02 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "promex01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "54",
+            "logsize": "0B",
+            "app_version": [
+                "vigil-blackbox-exporter-1.1.2-11.el7.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "promui01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "492",
+            "logsize": "0B",
+            "app_version": [
+                "vigil-grafana-1.1.2-11.el7.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qagdelta01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "231",
+            "logsize": "142MiB",
+            "app_version": [
+                "qAgent-new-delta-processor-42.0.2-2.noarch"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "inactive",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qagprivate01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "231",
+            "logsize": "1.1GiB",
+            "app_version": [
+                "qAgent-web-service-private-42.0.0-6.noarch"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "inactive",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qagpublic01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "231",
+            "logsize": "1.8MiB",
+            "app_version": [
+                "qAgent-web-service-public-42.0.0-6.noarch"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "inactive",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qapi01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "235",
+            "logsize": "25MiB",
+            "app_version": [
+                "'10.25.1.0-4'"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "inactive",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "UNKNOWN",
+                "Date": "UNKNOWN"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:03 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "qconsul04.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "running",
+            "ntp_status": "out-of-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "198",
+            "logsize": "0B",
+            "app_version": [
+                "qconsul-4.0.0-2.el7.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:01 UTC; 22min ago"
+            }
+        },
+        "qconsul05.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "running",
+            "ntp_status": "out-of-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "492",
+            "logsize": "0B",
+            "app_version": [
+                "qconsul-4.0.0-2.el7.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:01 UTC; 20min ago"
+            }
+        },
+        "qconsul06.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "running",
+            "ntp_status": "out-of-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "492",
+            "logsize": "0B",
+            "app_version": [
+                "qconsul-4.0.0-2.el7.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:01 UTC; 20min ago"
+            }
+        },
+        "qdb02.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "182",
+            "logsize": "0B",
+            "app_version": [
+                "19.16.0.0.0"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2023-09-21T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qgenzk01.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS Linux release 7.9.2009 (Core)",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Down",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "20",
+            "logsize": "7.0MiB",
+            "app_version": [
+                "1.4.0"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:01 UTC; 20min ago"
+            }
+        },
+        "qgenzk02.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS Linux release 7.9.2009 (Core)",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "462",
+            "logsize": "10MiB",
+            "app_version": [
+                "1.4.0"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qgenzk03.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS Linux release 7.9.2009 (Core)",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "462",
+            "logsize": "10MiB",
+            "app_version": [
+                "1.4.0"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:01 UTC; 20min ago"
+            }
+        },
+        "qkafka01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "115",
+            "logsize": "8.7MiB",
+            "app_version": [
+                "5.4.0"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qkafka02.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "197",
+            "logsize": "3.7MiB",
+            "app_version": [
+                "5.4.0"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qkafka03.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "50",
+            "logsize": "16MiB",
+            "app_version": [
+                "5.4.0"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qkafka04.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "113",
+            "logsize": "9.0MiB",
+            "app_version": [
+                "5.4.0"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:01 UTC; 20min ago"
+            }
+        },
+        "qkafka05.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "197",
+            "logsize": "16MiB",
+            "app_version": [
+                "5.4.0"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qkafka06.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "50",
+            "logsize": "15MiB",
+            "app_version": [
+                "5.4.0"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qkafkamgmt01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "kafka_status": {
+                "misconfigured_topic_count": "0",
+                "misconfigured_topics": [],
+                "smoke_test": "Successful",
+                "under_replicated_partitions": "0"
+            },
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "190",
+            "logsize": "11MiB",
+            "app_version": [
+                "5.4.0"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qkafkamgmt02.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "kafka_status": {
+                "misconfigured_topic_count": "0",
+                "misconfigured_topics": [],
+                "smoke_test": "Successful",
+                "under_replicated_partitions": "0"
+            },
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "197",
+            "logsize": "4.7MiB",
+            "app_version": [
+                "5.4.0"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-21T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qlysdb01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "166",
+            "logsize": "0B",
+            "app_version": "unknown",
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2023-10-07T20"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qlysdb02.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "114",
+            "logsize": "0B",
+            "app_version": "unknown",
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2023-11-29T06"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qosdata01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "out-of-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "126",
+            "logsize": "0B",
+            "app_version": [
+                "opensearch-1.2.4-3.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:01 UTC; 18min ago"
+            }
+        },
+        "qosdata02.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "out-of-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "126",
+            "logsize": "0B",
+            "app_version": [
+                "opensearch-1.2.4-3.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 19min ago"
+            }
+        },
+        "qosdata03.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "out-of-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "125",
+            "logsize": "0B",
+            "app_version": [
+                "opensearch-1.2.4-3.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 19min ago"
+            }
+        },
+        "qosdata04.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "out-of-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "126",
+            "logsize": "0B",
+            "app_version": [
+                "opensearch-1.2.4-3.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 13min ago"
+            }
+        },
+        "qosdata05.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "out-of-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "108",
+            "logsize": "0B",
+            "app_version": [
+                "opensearch-1.2.4-3.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qosdataalrt01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "out-of-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "134",
+            "logsize": "0B",
+            "app_version": [
+                "opensearch-1.2.4-3.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 19min ago"
+            }
+        },
+        "qosdataalrt02.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "out-of-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "134",
+            "logsize": "0B",
+            "app_version": [
+                "opensearch-1.2.4-3.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:01 UTC; 19min ago"
+            }
+        },
+        "qosdataalrt03.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "out-of-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "134",
+            "logsize": "0B",
+            "app_version": [
+                "opensearch-1.2.4-3.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-12.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 19min ago"
+            }
+        },
+        "qosdataclv01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "113",
+            "logsize": "0B",
+            "app_version": [
+                "opensearch-1.2.4-3.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:01 UTC; 20min ago"
+            }
+        },
+        "qosdataclv02.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "129",
+            "logsize": "0B",
+            "app_version": [
+                "opensearch-1.2.4-3.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qosdataclv03.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "129",
+            "logsize": "0B",
+            "app_version": [
+                "opensearch-1.2.4-3.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qosdatacmn01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "134",
+            "logsize": "0B",
+            "app_version": [
+                "opensearch-1.2.4-3.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qosdatacmn02.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "134",
+            "logsize": "0B",
+            "app_version": [
+                "opensearch-1.2.4-3.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qosdatacmn03.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "134",
+            "logsize": "0B",
+            "app_version": [
+                "opensearch-1.2.4-3.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qredis07.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS Linux release 7.9.2009 (Core)",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "250",
+            "logsize": "745KiB",
+            "app_version": [
+                "7.0.10-1.el7"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qredis08.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS Linux release 7.9.2009 (Core)",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "250",
+            "logsize": "769KiB",
+            "app_version": [
+                "7.0.10-1.el7"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qredis09.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS Linux release 7.9.2009 (Core)",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "862",
+            "logsize": "789KiB",
+            "app_version": [
+                "7.0.10-1.el7"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qredis10.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS Linux release 7.9.2009 (Core)",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "862",
+            "logsize": "843KiB",
+            "app_version": [
+                "7.0.10-1.el7"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qredis11.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS Linux release 7.9.2009 (Core)",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Down",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "20",
+            "logsize": "3.0MiB",
+            "app_version": [
+                "7.0.10-1.el7"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:01 UTC; 20min ago"
+            }
+        },
+        "web01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "236",
+            "logsize": "144MiB",
+            "app_version": [
+                "'10.25.1.0-4'"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "inactive",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "UNKNOWN",
+                "Date": "UNKNOWN"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Thu 2024-03-14 17:30:03 UTC; 1 weeks 0 days ago"
+            }
+        },
+        "qredis12.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS Linux release 7.9.2009 (Core)",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "509",
+            "logsize": "3.7MiB",
+            "app_version": [
+                "7.0.10-1.el7"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qzkpr01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "190",
+            "logsize": "1.1MiB",
+            "app_version": [
+                "5.4.0"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qzkpr02.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "197",
+            "logsize": "1.1MiB",
+            "app_version": [
+                "5.4.0"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "qzkpr03.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "175",
+            "logsize": "1.1MiB",
+            "app_version": [
+                "5.4.0"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "rec01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "233",
+            "logsize": "67MiB",
+            "app_version": [
+                "'10.25.1.0-4'"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "inactive",
+                "version": "splunk-agent-1.0.1-12.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "UNKNOWN",
+                "Date": "UNKNOWN"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:03 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "reindexing01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "running",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "178",
+            "logsize": "0B",
+            "app_version": [
+                "reindexing-web-2.0.0-1.noarch"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "relay01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 9.2",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "not_installed",
+            "ntp_status": "undefined",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "224",
+            "logsize": "0B",
+            "app_version": [
+                "postfix-3.5.9-19.el9.x86_64"
+            ],
+            "splunk_status": {
+                "installed": false,
+                "status": "N/A",
+                "version": "N/A"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2023-08-10T18"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:06 UTC; 1 week 1 day ago"
+            }
+        },
+        "relay02.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 9.2",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "not_installed",
+            "ntp_status": "undefined",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "129",
+            "logsize": "0B",
+            "app_version": [
+                "postfix-3.5.9-19.el9.x86_64"
+            ],
+            "splunk_status": {
+                "installed": false,
+                "status": "N/A",
+                "version": "N/A"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2023-07-10T06"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:03 UTC; 1 week 1 day ago"
+            }
+        },
+        "rep01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "236",
+            "logsize": "13MiB",
+            "app_version": [
+                "'10.25.1.0-4'"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "inactive",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "UNKNOWN",
+                "Date": "UNKNOWN"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:02 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "sch01.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "Running",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "237",
+            "logsize": "19MiB",
+            "app_version": [
+                "'10.25.1.0-4'"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "inactive",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "UNKNOWN",
+                "Date": "UNKNOWN"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:03 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "sim01.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS Linux release 7.9.2009 (Core)",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "47",
+            "logsize": "0B",
+            "app_version": [
+                "ops-ca-bundle-1.0-8.noarch"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-13.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T12"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:02 UTC; 20min ago"
+            }
+        },
+        "svc01.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS release 6.10 (Final)",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "37",
+            "logsize": "N/A",
+            "app_version": [
+                "puppet-server-2.7.26-2.el6.noarch"
+            ],
+            "splunk_status": {
+                "installed": false,
+                "status": "N/A",
+                "version": "N/A"
+            },
+            "wait_time": "1",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "UNKNOWN",
+                "Date": "UNKNOWN"
+            },
+            "sssd_info": {
+                "status": "inactive",
+                "uptime": "N/A"
+            }
+        },
+        "svc05.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "CloudStack KVM Hypervisor",
+            "uptime": "4",
+            "logsize": "0B",
+            "app_version": [
+                "puppet-server-3.6.2-3.el7.noarch"
+            ],
+            "splunk_status": {
+                "installed": false,
+                "status": "N/A",
+                "version": "N/A"
+            },
+            "wait_time": "1",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "UNKNOWN",
+                "Date": "UNKNOWN"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Mon 2024-03-18 17:30:02 UTC; 3 days ago"
+            }
+        },
+        "swarmctlgm01.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS Linux release 7.6.1810 (Core)",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "not_installed",
+            "ntp_status": "in-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "318",
+            "logsize": "0B",
+            "app_version": "unknown",
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "UNKNOWN",
+                "Date": "UNKNOWN"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:02 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "swarmctlgm02.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS Linux release 7.6.1810 (Core)",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "not_installed",
+            "ntp_status": "undefined",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "198",
+            "logsize": "0B",
+            "app_version": "unknown",
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "UNKNOWN",
+                "Date": "UNKNOWN"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:01 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "swarmctlgm03.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS Linux release 7.6.1810 (Core)",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "not_installed",
+            "ntp_status": "undefined",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "457",
+            "logsize": "0B",
+            "app_version": "unknown",
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "UNKNOWN",
+                "Date": "UNKNOWN"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:01 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "swarmctlgw01.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS Linux release 7.6.1810 (Core)",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "not_installed",
+            "ntp_status": "undefined",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "84",
+            "logsize": "0B",
+            "app_version": "unknown",
+            "splunk_status": {
+                "installed": false,
+                "status": "N/A",
+                "version": "N/A"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "UNKNOWN",
+                "Date": "UNKNOWN"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:01 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "swarmctlgw02.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS Linux release 7.6.1810 (Core)",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "not_installed",
+            "ntp_status": "undefined",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "198",
+            "logsize": "0B",
+            "app_version": "unknown",
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "UNKNOWN",
+                "Date": "UNKNOWN"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:01 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "swarmctlgw03.c90.eng.raleigh.google.com": {
+            "os_version": "CentOS Linux release 7.6.1810 (Core)",
+            "node_exporter_status": {
+                "installed": false,
+                "status": "N/A"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "not_installed",
+            "ntp_status": "undefined",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "457",
+            "logsize": "0B",
+            "app_version": "unknown",
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "UNKNOWN",
+                "Date": "UNKNOWN"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Wed 2024-03-13 17:30:01 UTC; 1 weeks 1 days ago"
+            }
+        },
+        "vault04.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "running",
+            "ntp_status": "out-of-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "492",
+            "logsize": "0B",
+            "app_version": [
+                "qvault-8.0.0-10.el7.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T01"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:01 UTC; 20min ago"
+            }
+        },
+        "vault05.c90.eng.raleigh.google.com": {
+            "os_version": "Oracle Linux Server release 7.9",
+            "node_exporter_status": {
+                "installed": true,
+                "status": "active"
+            },
+            "google_service_status": "unknown_app",
+            "consul_service_status": "running",
+            "ntp_status": "out-of-sync",
+            "system_type": "VMware Virtual Platform",
+            "uptime": "224",
+            "logsize": "0B",
+            "app_version": [
+                "qvault-8.0.0-10.el7.x86_64"
+            ],
+            "splunk_status": {
+                "installed": true,
+                "status": "active",
+                "version": "splunk-agent-1.0.1-15.el7.x86_64"
+            },
+            "wait_time": "0",
+            "cert_package": {
+                "ops": "ops-ca-bundle-1.0-8.noarch",
+                "qtfa": "qtfa-1.0-44.noarch"
+            },
+            "bootstrap_info": {
+                "Bootstrap_Version": "1.0.0",
+                "Date": "2024-03-22T00"
+            },
+            "sssd_info": {
+                "status": "active",
+                "uptime": "Fri 2024-03-22 12:01:01 UTC; 20min ago"
+            }
+        }
+    }
+}
