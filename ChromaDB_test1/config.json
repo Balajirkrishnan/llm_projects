@@ -1,5 +1,5 @@
 {
-    "vectordb_name": "poc-aiml-node01.eng.sjc01.qualys.com",
+    "vectordb_name": "",
     "vectordb_port": 8000,
     "collection_name": "my_collection_test_0002"
 }
